@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let store = "";
+        let n = 5;
+
+        for (let index = 0; index < n; index++) {
+            for(let j = n - index; j > 1; j--){
+                store += " ";
+            }
+
+            for(let k = 0; k <= index; k++){
+                store += " *";
+            }
+            store += "\n";
+        }
+
+        console.log(store);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROBLEM 2 Solution</title>
+</head>
+<body>
+
+    <script>
+        let store = "";
+        let n = 5;
+        for (var i = 0; i < n; i++) {
+            for (var j = n - i; j > 1; j--) {
+                store += " ";
+            }
+
+            for (var k = 0; k <= i; k++) {
+                store += "* ";
+            }
+
+            store += "\n";
+        }
+        console.log(store);
+    </script>
+    <script src="Js/Car.js"></script>
+</body>
+</html>
