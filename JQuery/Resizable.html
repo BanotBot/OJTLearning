@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resizable Elements</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+
+    <style>
+        #resizable-container {
+            width:300px;
+            height: 300px;
+        }
+        #resizable-container button {
+            margin: 30px 60px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" id="resizable-container" class="ui-widget-content">
+    <!-- <div id="resizable-container" class="ui-widget-content">
+        <button>Resizable Container</button>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $("#resizable-container").resizable();
+        });
+    </script>
+</body>
+</html>
