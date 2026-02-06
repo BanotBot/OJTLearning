@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox and Radio Elements</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    
+    <h1>Radio Buttons and Check Boxes</h1>
+
+    <h2>Radio Boxes</h2>
+    <legend> Radio Group</legend>
+    <fieldset>
+        <label for="radio1">Radio 1</label>
+        <input type="radio" name="radioGroup" id="radio1">
+        <label for="radio2">Radio 2</label>
+        <input type="radio" name="radioGroup" id="radio2">
+    </fieldset>
+
+    <h2>Kape Choices</h2>
+    <fieldset>
+        <legend>Check Boxes</legend>
+        <label for="check1">Coffee</label>
+        <input type="checkbox" name="checkGroup" id="check1">
+        <label for="check2">Tea</label>
+        <input type="checkbox" name="checkGroup" id="check2">
+    </fieldset>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $("input").checkboxradio();
+        });
+    </script>
+</body>
+</html>
