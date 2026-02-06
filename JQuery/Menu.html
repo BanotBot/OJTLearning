@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Elements</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+    <style>
+        #menu {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul id="menu">
+        <li><div>COFFIE TYPE</div>
+            <ul>
+                <li>Original</li>
+                <li>Blanca</li>
+                <li><div>Coffee</div>
+                    <ul>
+                        <li>Black</li>
+                        <li>Brown</li>
+                        <li>Green</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>SUGAR TYPE</li>
+        <li>WATER TYPE</li> 
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $("#menu").menu();
+        });
+
+    </script>
+</body>
+</html>
