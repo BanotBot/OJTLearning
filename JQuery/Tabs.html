@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Elements</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    
+    <h1>Coffee Ingredients</h1>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Original</a></li>
+            <li><a href="#tabs-2">Classic</a></li>
+            <li><a href="#tabs-3">Barako</a></li>
+        </ul>
+
+        <div id="tabs-1">
+            <p>Original coffee is the best and recommended choice because of it's uniqueness and aroma.</p>
+        </div>
+
+        <div id="tabs-2">
+            <p>Classic Coffee is the best because of it's originality and old taste which creates the tasteful taste of it.</p>
+        </div>
+
+        <div id="tabs-3">
+            <p>Barako is good for those people who really loves to drink a strong coffee especially during the morning which helps you to be fully awake.</p>
+        </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $("#tabs").tabs();
+        });
+    </script>
+</body>
+</html>
