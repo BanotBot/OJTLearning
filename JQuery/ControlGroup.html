@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Group</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    <h1>Control Group Example</h1>
+    <fieldset>
+        <legend>Rental Car</legend>
+        <div class="controlgroup">
+            <select name="carType" id="carType">
+                <option value="">Car Type</option>
+                <option value="">Midsize Car</option>
+                <option value="">SUV</option>
+                <option value="">Luxury Car</option>
+                <option value="">Convertible</option>
+            </select>
+            <label for="transmission-standard">Standard</label>
+            <input type="radio" name="transmission" id="transmission-standard">
+            <label for="transmission-standard">Automatic</label>
+            <input type="radio" name="transmission" id="transmission-automatic">
+            <label for="insurance">Insurance</label>
+            <input type="checkbox" name="insurance" id="insurance">
+            <label for="horizontal-spinner" class="ui-controlgroup-label"> # of cars</label>
+            <input id="horizontal-spinner" class="ui-spinner-input">
+            <button>Book now!</button>
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Rental coffee</legend>
+        <div class="controlgroup">
+            <select name="coffeeType" id="coffeeType">
+                <option value="">Coffee Type</option>
+                <option value="">Espresso</option>
+                <option value="">Latte</option>
+                <option value="">Cappuccino</option>
+                <option value="">Mocha</option>
+            </select>
+            <label for="size-small">Small</label>
+            <input type="radio" name="size" id="size-small">
+            <label for="size-large">Large</label>
+            <input type="radio" name="size" id="size-large">
+            <label for="extra-shot">Extra Shot</label>
+            <input type="checkbox" name="extra-shot" id="extra-shot">
+            <label for="horizontal-spinner" class="ui-control-group-label"> # of cups</label>
+            <input id="horizontal-spinner" class="ui-spinner-input">
+            <button>Order Now!</button>
+        </div>
+    </fieldset>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"></script>
+</body>
+</html>
