@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner Elements</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    
+    <div>
+        <label for="spinner">Select a value : </label>
+        <input type="text" id="spinner" name="value">
+    </div>
+
+    <div>
+        <button id="disabled-spinner">Enabled/Disabled Toogle</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            var spinner = $("#spinner").spinner();
+            $("#disabled-spinner").on("click", function(e){
+                if (spinner.spinner("option", "disabled")) {
+                    spinner.spinner("enable");
+                }else{
+                    spinner.spinner("disable");
+                }
+            })
+        });
+    </script>
+</body>
+</html>
