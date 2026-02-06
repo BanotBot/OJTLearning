@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Elements</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+    <style>
+        #sortable{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 60%;
+        }
+
+        #sortable li {
+            margin: 0px 3px 3px 3px;
+            padding: 0.4em;
+            padding-left: 1.5em;
+            font-size: 1.4em;
+            height: 18px;
+        }
+
+        #sortable li span {
+            position: absolute;
+            margin-left: -1.3em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul id="sortable">
+        <li class="ui-widgets-content">1. <span class="ui-icon-arrowthick-2-n-s"></span>Original</li>
+        <li class="ui-widgets-content">2. <span class="ui-icon-arrowthick-2-n-s"></span>Kopiko Blanca</li>
+        <li class="ui-widgets-content">3. <span class="ui-icon-arrowthick-2-n-s"></span>Nescafe Stick</li>
+        <li class="ui-widgets-content">4. <span class="ui-icon-arrowthick-2-n-s"></span>Nescafe classic</li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $("#sortable").sortable();
+        });
+    </script>
+</body>
+</html>
