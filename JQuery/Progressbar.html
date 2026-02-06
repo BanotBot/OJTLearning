@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar Elements</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+
+    <style>
+        #progressbar{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="progressbar"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $("#progressbar").progressbar({
+                value:4,
+                min: 5,
+                max: 10
+            });
+        });
+    </script>
+</body>
+</html>
