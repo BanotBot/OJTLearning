@@ -35,7 +35,37 @@
             </div>
         </section>
     </section>
-   
+
+    <h1>Split Button Dropdowns</h1>
+    <section class="btn-group">
+        <button type="button"  class="btn-primary">
+            Sony
+        </button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+        <span class="caret"></span>
+
+        <div class="dropdown-menu">
+            <a href="" class="dropdown-item">Mouse</a>
+            <a href="" class="dropdown-item">Keyboard</a>
+        </div>
+    </section>
+
+    <h1>Vertical Button w/ dropdown</h1>
+    <section class="btn-group-vertical">
+        <button class="btn btn-primary">Apple</button>
+        <button class="btn btn-primary">User</button>
+
+        <div class="btn-group">
+            <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                Coffee
+            </button>
+
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Original</a>
+                <a href="" class="dropdown-item">Barako</a>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
