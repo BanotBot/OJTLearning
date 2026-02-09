@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopOver</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <h1>PopUp Over Example</h1>
+                <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"> Toggle popover</a>
+            </div>
+
+            <h1>Positioning Popover</h1>
+            <a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Click</a>
+            <a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Click</a>
+            <a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Click</a>
+            <a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Click</a>
+            
+            <!-- If you want the popover to be displayed when you move the mouse pointer over the element, use the data-trigger attribute with a value of "hover": -->
+            <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content">Hover over me</a>
+
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+</html>
